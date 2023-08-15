@@ -52,7 +52,7 @@ public class Lib
             foreach (var rx in q)
                 if (knownAssemblies.ContainsKey(rx))
                 {
-                    Console.WriteLine($"Project {project} filereferences {rx} which is a project in the solution.");
+                    Console.WriteLine($"Project {project} uses file reference to {rx} which is a project in the solution.");
                     ret = false;
                 }
         }
